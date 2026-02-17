@@ -32,14 +32,3 @@ class Box{
         this.height = sc.nextDouble();
     }
 }
-
-public class Main
-{
-	public static void main(String[] args) {
-		
-        Box b3 = new Box();
-
-        
-        b3.print();
-	}
-}
