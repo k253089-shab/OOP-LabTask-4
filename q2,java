@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+class Book{
+    private String title;
+    private String author;
+    private double price;
+
+    public Book(String title, String author, double price){
+        this.title=title;
+        this.author=author;
+        setPrice(p);
+    }
+
+    public void setTitle(String t){
+        title=t;
+    }
+    public void setAuthor(String a){
+        author=a;
+    }
+    public void setPrice(double p){
+        if(p>0){
+            price=p;
+        } else{
+            System.out.println("Error: Price cannot be negative");
+        }
+    }
+
+    public String getTitle(){
+        return title;
+    }
+    public String getAuthor(){
+        return author;
+    }
+    public double getPrice(){
+        return price;
+    }
+}
